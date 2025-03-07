@@ -49,7 +49,7 @@ public class ProduitService {
 
         Produit produitAModifier = optionalProduit.get();
         produitAModifier.setName(produit.getName());
-        produitAModifier.setName(String.valueOf(produit.getPrice()));
+        produitAModifier.setPrice(produit.getPrice());
 
         return produitRepository.save(produitAModifier);
     }
